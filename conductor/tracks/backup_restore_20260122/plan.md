@@ -9,7 +9,7 @@
     - [ ] 在 `index.html` 的 `<style>` 區塊中設定 `#exportBtn` 與 `#importBtn` 的位置（例如位於 `#refreshBtn` 下方，垂直排列）。
     - [ ] 尋找並套用適合的備份/還原圖示網址。
 
-## Phase 2: Export Functionality
+## Phase 2: Export Functionality [checkpoint: 40bc8a1]
 - [x] Task: 實作匯出邏輯 97415dd
 - [x] Task: 測試匯出功能 97415dd
     - [ ] 驗證下載的檔案內容是否包含正確的收藏資料。
