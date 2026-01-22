@@ -14,7 +14,7 @@
 - [x] Task: 測試匯出功能 97415dd
     - [ ] 驗證下載的檔案內容是否包含正確的收藏資料。
 
-## Phase 3: Import Functionality
+## Phase 3: Import Functionality [checkpoint: 6269401]
 - [x] Task: 實作匯入邏輯 40402ba
 - [x] Task: 測試匯入功能 40402ba
 
