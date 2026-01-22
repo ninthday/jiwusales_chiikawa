@@ -1,11 +1,13 @@
 # Implementation Plan - Backup & Restore
 
 ## Phase 1: UI Implementation
-- [ ] Task: 新增備份控制區域的 HTML 結構
-    - [ ] 在 `index.html` 底部或適當位置新增包含「匯出」與「匯入」按鈕的容器。
-    - [ ] 新增隱藏的 `<input type="file">` 用於處理檔案上傳。
-- [ ] Task: 設定備份控制區域的樣式
-    - [ ] 在 `index.html` 的 `<style>` 區塊中新增按鈕樣式，確保與現有 UI (`.control-btn` 或 `.bottom-bar`) 風格一致。
+- [x] Task: 新增備份控制按鈕的 HTML 結構 717d3fc
+    - [ ] 在 `index.html` 中新增兩個 `<button>`，套用 `.control-btn` 類別。
+    - [ ] 分別賦予 ID 如 `#exportBtn` 與 `#importBtn`。
+    - [ ] 新增隱藏的 `<input type="file" id="importInput">` 用於處理檔案上傳。
+- [ ] Task: 設定按鈕位置與樣式
+    - [ ] 在 `index.html` 的 `<style>` 區塊中設定 `#exportBtn` 與 `#importBtn` 的位置（例如位於 `#refreshBtn` 下方，垂直排列）。
+    - [ ] 尋找並套用適合的備份/還原圖示網址。
 
 ## Phase 2: Export Functionality
 - [ ] Task: 實作匯出邏輯
