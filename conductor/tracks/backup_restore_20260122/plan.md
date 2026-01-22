@@ -15,14 +15,8 @@
     - [ ] 驗證下載的檔案內容是否包含正確的收藏資料。
 
 ## Phase 3: Import Functionality
-- [ ] Task: 實作匯入邏輯
-    - [ ] 撰寫 `importData(file)` 函式：讀取檔案內容並解析 JSON。
-    - [ ] 實作資料驗證：確保 JSON 結構符合預期。
-    - [ ] 實作寫入邏輯：將資料存回 LocalStorage。
-    - [ ] 綁定「匯入」按鈕與檔案選擇器事件。
-- [ ] Task: 測試匯入功能
-    - [ ] 驗證匯入有效檔案後，頁面是否正確更新收藏狀態。
-    - [ ] 驗證匯入無效檔案時是否顯示錯誤提示。
+- [x] Task: 實作匯入邏輯 40402ba
+- [x] Task: 測試匯入功能 40402ba
 
 ## Phase 4: Integration & Polish
 - [ ] Task: 優化使用者體驗
