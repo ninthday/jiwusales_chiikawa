@@ -10,11 +10,8 @@
     - [ ] 尋找並套用適合的備份/還原圖示網址。
 
 ## Phase 2: Export Functionality
-- [ ] Task: 實作匯出邏輯
-    - [ ] 撰寫 `exportData()` 函式：遍歷 LocalStorage 收集 `collectedDolls_` 資料。
-    - [ ] 產生 JSON Blob 並建立下載連結。
-    - [ ] 綁定「匯出」按鈕事件。
-- [ ] Task: 測試匯出功能
+- [x] Task: 實作匯出邏輯 97415dd
+- [x] Task: 測試匯出功能 97415dd
     - [ ] 驗證下載的檔案內容是否包含正確的收藏資料。
 
 ## Phase 3: Import Functionality
