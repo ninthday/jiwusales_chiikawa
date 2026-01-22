@@ -19,7 +19,7 @@
 - [x] Task: 測試匯入功能 40402ba
 
 ## Phase 4: Integration & Polish
-- [ ] Task: 優化使用者體驗
+- [x] Task: 優化使用者體驗 894e263
     - [ ] 新增匯入前的確認對話框 (Confirm Dialog)。
     - [ ] 新增操作成功或失敗的提示訊息 (Alert)。
-- [ ] Task: Conductor - User Manual Verification 'Integration & Polish' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Integration & Polish' (Protocol in workflow.md) 894e263
