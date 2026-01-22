@@ -1,6 +1,6 @@
 # Implementation Plan - Backup & Restore
 
-## Phase 1: UI Implementation
+## Phase 1: UI Implementation [checkpoint: b12adde]
 - [x] Task: 新增備份控制按鈕的 HTML 結構 717d3fc
     - [ ] 在 `index.html` 中新增兩個 `<button>`，套用 `.control-btn` 類別。
     - [ ] 分別賦予 ID 如 `#exportBtn` 與 `#importBtn`。
