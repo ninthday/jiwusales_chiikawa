@@ -447,6 +447,17 @@ h1 {
     <img src="https://i.postimg.cc/gkpnr8RJ/re.png" alt="Refresh" />
   </button>
 
+  <!-- 匯出與匯入按鈕 (Backup/Restore) -->
+  <button id="exportBtn" class="control-btn" aria-label="匯出備份" title="匯出備份">
+    <!-- 暫時使用下載圖示 -->
+    <img src="https://i.postimg.cc/k4xM3D7g/download.png" alt="Export" />
+  </button>
+  <button id="importBtn" class="control-btn" aria-label="匯入備份" title="匯入備份">
+    <!-- 暫時使用上傳圖示 -->
+    <img src="https://i.postimg.cc/cJzW3f05/upload.png" alt="Import" />
+  </button>
+  <input type="file" id="importInput" style="display: none;" accept=".json" />
+
 <script>
 const SHEET_ID = "17gH9HZKvW_6fMCWYLyqnzMHj40rA7PiwWg6L0GvbFgQ";
 const sheetNames = ["吉伊", "小八", "兔兔", "小桃", "師傅", "栗子", "獅薩", "古本", "其他角色"];
