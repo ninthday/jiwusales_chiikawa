@@ -58,12 +58,17 @@ body {
   transition: opacity 0.2s, transform 0.2s;
   padding: 0;
 }
-.control-btn img {
+.control-btn img,
+.control-btn svg {
   width: 60%;
   height: 60%;
   pointer-events: none;
   user-select: none;
 }
+.control-btn svg {
+  fill: #666;
+}
+
 
 /* 重新整理 按鈕位置 */
 #refreshBtn {
@@ -460,12 +465,14 @@ h1 {
 
   <!-- 匯出與匯入按鈕 (Backup/Restore) -->
   <button id="exportBtn" class="control-btn" aria-label="匯出備份" title="匯出備份">
-    <!-- 暫時使用下載圖示 -->
-    <img src="https://i.postimg.cc/k4xM3D7g/download.png" alt="Export" />
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+    </svg>
   </button>
   <button id="importBtn" class="control-btn" aria-label="匯入備份" title="匯入備份">
-    <!-- 暫時使用上傳圖示 -->
-    <img src="https://i.postimg.cc/cJzW3f05/upload.png" alt="Import" />
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 20h14v-2H5v2zm0-10h4v6h6v-6h4l-7-7-7 7z"/>
+    </svg>
   </button>
   <input type="file" id="importInput" style="display: none;" accept=".json" />
 
