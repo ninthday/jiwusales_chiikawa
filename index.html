@@ -874,6 +874,51 @@ function exportData() {
 
 document.getElementById("exportBtn").addEventListener("click", exportData);
 
+function importData(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      const data = JSON.parse(e.target.result);
+      if (typeof data !== 'object' || data === null) {
+        throw new Error("格式錯誤：備份檔案必須是 JSON 物件");
+      }
+      
+      const confirmImport = confirm("⚠️ 匯入備份將會覆蓋目前的收藏進度，確定要繼續嗎？");
+      if (!confirmImport) return;
+      
+      let importCount = 0;
+      Object.keys(data).forEach(key => {
+        if (key.startsWith("collectedDolls_")) {
+          localStorage.setItem(key, JSON.stringify(data[key]));
+          importCount++;
+        }
+      });
+      
+      if (importCount > 0) {
+        alert(`✨ 成功匯入 ${importCount} 個類別的收藏進度！`);
+        location.reload();
+      } else {
+        alert("❌ 備份檔案中沒有找到有效的收藏資料。");
+      }
+    } catch (err) {
+      alert("❌ 匯入失敗：" + err.message);
+      console.error(err);
+    }
+  };
+  reader.readAsText(file);
+  // 重置 input 以便下次選擇同一個檔案也能觸發 change
+  event.target.value = '';
+}
+
+document.getElementById("importBtn").addEventListener("click", () => {
+  document.getElementById("importInput").click();
+});
+
+document.getElementById("importInput").addEventListener("change", importData);
+
 </script>
 </body>
 </html>
