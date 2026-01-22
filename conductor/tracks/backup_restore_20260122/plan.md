@@ -5,7 +5,7 @@
     - [ ] 在 `index.html` 中新增兩個 `<button>`，套用 `.control-btn` 類別。
     - [ ] 分別賦予 ID 如 `#exportBtn` 與 `#importBtn`。
     - [ ] 新增隱藏的 `<input type="file" id="importInput">` 用於處理檔案上傳。
-- [ ] Task: 設定按鈕位置與樣式
+- [x] Task: 設定按鈕位置與樣式 dd4c2d8
     - [ ] 在 `index.html` 的 `<style>` 區塊中設定 `#exportBtn` 與 `#importBtn` 的位置（例如位於 `#refreshBtn` 下方，垂直排列）。
     - [ ] 尋找並套用適合的備份/還原圖示網址。
 
